@@ -1,0 +1,55 @@
+.App {
+  font-family: sans-serif;
+}
+
+.tree li {
+  transition: all 0.2s;
+}
+
+.tree li div svg {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+}
+
+.tree li {
+  list-style: none;
+}
+
+.tree li div {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  padding: 0.25rem 0;
+}
+
+.tree li:last-child div::before {
+  display: none;
+}
+
+.tree ul {
+  margin-left: 1rem;
+  padding-left: 1rem;
+  border-left: 1px solid #999;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.search-input {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+  width: 100%;
+  max-width: 400px;
+}
+
+.search-input:focus {
+  border-color: #4c51bf;
+}
